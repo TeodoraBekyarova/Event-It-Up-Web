@@ -1,0 +1,330 @@
+﻿
+@{
+	ViewBag.Title = "Index";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Site Metas -->
+	<title>EventsUp</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Pogo Slider CSS -->
+	<link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<!--SignUp-->
+	<div id="id02" class="modal">
+		<form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="container">
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+				<label>
+					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+				</label>
+
+				<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+				<button type="submit">Sign Up</button>
+			</div>
+		</form>
+	</div>
+	<!--End SignUp-->
+	<!-- LogIn-->
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<button type="submit">Login</button>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
+
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+	</div>
+	<!-- LogIn-->
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img style="width: 250px; height: auto;" src="https://static1.squarespace.com/static/5afcb2accef3722b899ea0f8/t/5b3d1abfaa4a9983df69d91a/1532304237109/?format=1500w" alt="image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link active" href="#home">Home</a></li>
+						<li><a onclick="document.getElementById('id01').style.display='block'" class="nav-link" href="#gallery">Log In</a></li>
+						<li><a onclick="document.getElementById('id02').style.display='block'" class="nav-link" href="#events">Sign Up</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	<!-- Start Banner -->
+	<div class="ulockd-home-slider">
+		<img style="width: 100%; height: auto;" src="images/slider-03.jpg">
+	</div>
+	<!-- End Banner -->
+	<!-- Start Events -->
+	<div id="family" class="family-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Events</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-team-member">
+						<div class="family-img">
+							<a href="second.html"><img class="img-fluid" src="images/w.jpg" alt="" /></a>
+						</div>
+						<div class="family-info">
+							<h4>Wedding</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-team-member">
+						<div class="family-img">
+							<a href="third.html"><img class="img-fluid" src="images/b.jpg" alt="" /></a>
+						</div>
+						<div class="family-info">
+							<h4>Birthday</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-team-member">
+						<div class="family-img">
+							<a href="forth.html"><img class="img-fluid" src="images/h.jpg" alt="" /></a>
+						</div>
+						<div class="family-info">
+							<h4>Halloween</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Events -->
+	<!-- Start Gallery -->
+	<div id="gallery" class="gallery-box">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Gallery</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="popup-gallery clearfix">
+					<li>
+						<a href="images/gallery-01.jpg">
+							<img class="img-fluid" src="images/gallery-01.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-02.jpg">
+							<img class="img-fluid" src="images/gallery-02.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-03.jpg">
+							<img class="img-fluid" src="images/happy.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-04.jpg">
+							<img class="img-fluid" src="images/gallery-04.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-05.jpg">
+							<img class="img-fluid" src="images/gallery-05.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-06.jpg">
+							<img class="img-fluid" src="images/gallery-06.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-07.jpg">
+							<img class="img-fluid" src="images/gallery-07.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-08.jpg">
+							<img class="img-fluid" src="images/gallery-08.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Gallery -->
+	<!-- Start Contact -->
+	<div id="contact" class="contact-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Contact wth us</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<select class="custom-select d-block form-control" id="guest" required data-error="Please select an item in the list.">
+											<option disabled selected>Number Of Guest*</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										</select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<select class="custom-select d-block form-control" id="event" required data-error="Please select an item in the list.">
+											<option disabled selected>I Am Attending*</option>
+											<option value="1">Wedding ceremony</option>
+											<option value="2">Birthday party</option>
+											<option value="3">Halloween party</option>
+										</select>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">CW</a> Design By : <a href="">Krisi Tedi Yoli</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+	<!-- ALL JS FILES -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/form-validator.min.js"></script>
+	<script src="js/contact-form-script.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
